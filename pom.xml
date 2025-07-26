@@ -43,7 +43,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
-			<scope>test</scope>
+			<scope>compile</scope>
 		</dependency>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -82,6 +82,9 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
+           <configuration>
+                <release>17</release>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
